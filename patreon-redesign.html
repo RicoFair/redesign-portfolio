@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patreon Redesign Case Study | Rico Fair</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Rico Fair</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="patreon-redesign.html">Case Study</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container case-hero-grid">
+        <div>
+          <div class="kicker">Team project · individual portfolio case study</div>
+          <h1>Patreon Website Redesign</h1>
+          <p class="lead">This project started as a redesign problem, but the part I focused on most was making the front-end feel like a real product instead of a rough concept. My work centered on search behavior, page-to-page linking, top bar styling, overlays, and cleaning up parts of the interface that were not functioning or looking the way the team intended.</p>
+          <div class="button-row">
+            <a class="btn primary" href="https://ryebeyen.github.io/Group-14/home.html" target="_blank" rel="noreferrer">View live project</a>
+            <a class="btn" href="#problem">Start with the problem</a>
+          </div>
+        </div>
+        <aside class="panel toc">
+          <div class="kicker">On this page</div>
+          <a href="#problem">01 · Problem</a>
+          <a href="#research">02 · Research and findings</a>
+          <a href="#role">03 · My role</a>
+          <a href="#process">04 · Process and implementation</a>
+          <a href="#testing">05 · Testing and outcomes</a>
+          <a href="#final">06 · Final product</a>
+          <a href="#reflection">07 · Reflection</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container metric-grid">
+        <div class="metric"><strong>Team of 4</strong><span class="small">Rico Fair, Damani Gladden, Maleek Worrell, and Ry Yebeyen</span></div>
+        <div class="metric"><strong>Target users</strong><span class="small">College-aged users familiar with social media platforms</span></div>
+        <div class="metric"><strong>Main stack</strong><span class="small">HTML, CSS, JavaScript</span></div>
+        <div class="metric"><strong>My focus</strong><span class="small">Search, links, overlays, layout polish</span></div>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="container grid-2">
+        <div>
+          <div class="kicker">01 · Problem</div>
+          <h2>What was not working</h2>
+          <p class="section-intro">The project was not just “make Patreon look better.” The bigger issue was that the earlier direction made it harder for users to understand what the platform was for, where to go next, and how to explore without feeling boxed into one path. That hurt both clarity and user confidence, especially for people who were not already familiar with the product model.</p>
+          <div class="callout">Our team framed the redesign around three main issues: the platform’s purpose was not clear enough, the content organization felt cluttered, and the navigation added mental load instead of reducing it.</div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/problem-slide.png" alt="Presentation slide listing problems the redesign needed to solve" />
+          <p class="caption">From the team presentation: the redesign targeted product clarity, reduced visual clutter, and simpler navigation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container grid-2">
+        <div class="image-frame">
+          <img src="assets/findings-slide.png" alt="Presentation slide summarizing top user testing findings" />
+          <p class="caption">The biggest themes from testing were confusing navigation, unclear product purpose, and a flow that felt too linear.</p>
+        </div>
+        <div>
+          <div class="kicker">02 · Research and findings</div>
+          <h2>How the team learned what to fix</h2>
+          <p class="section-intro">The presentation materials show that the team used follow-up interviews, surveys and task-based testing, and direct observation during use. The target group was college-aged users who were familiar with social media platforms, which matched the kind of audience a content platform would need to reach.</p>
+          <div class="panel card">
+            <h3>Top three findings</h3>
+            <ol>
+              <li><strong>Navigation felt confusing.</strong> Users did not always get what they expected after clicking, and the structure felt unclear in both design and implementation.</li>
+              <li><strong>The product’s purpose was not obvious.</strong> New users had trouble understanding what the platform was for and why they should keep going.</li>
+              <li><strong>The early flow felt too linear.</strong> The experience did not leave enough room to explore, which made the product feel restrictive.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="role" class="section">
+      <div class="container grid-2">
+        <div>
+          <div class="kicker">03 · My role</div>
+          <h2>What I contributed</h2>
+          <p class="section-intro">Because this is an individual portfolio, I wanted to be direct about the part of the work that was mine. This was a team project, but my contribution was in the implementation details that affected how the site actually behaved.</p>
+          <div class="panel card">
+            <h3>My main responsibilities</h3>
+            <ul>
+              <li>Implemented the search bar behavior and worked through how the overlay and result links should function.</li>
+              <li>Made sure buttons, links, and page-to-page navigation connected properly instead of breaking the user flow.</li>
+              <li>Helped with top bar layout and styling so the navigation looked cleaner and felt more intentional.</li>
+              <li>Adjusted overlays, including search behavior and notification behavior before that part changed.</li>
+              <li>Polished pieces of the site that were not functioning or looking the way the team wanted.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel card">
+          <h3>Why I focused on these parts</h3>
+          <p>The testing feedback made it pretty clear that the redesign could not rely only on new visuals. If people were already confused about purpose and navigation, then the site needed cleaner interaction patterns too. That made front-end behavior just as important as the screens themselves.</p>
+          <div class="chips">
+            <span class="chip">Search interactions</span>
+            <span class="chip">Link validation</span>
+            <span class="chip">Top bar polish</span>
+            <span class="chip">UI cleanup</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="kicker">04 · Process and implementation</div>
+        <h2>How the redesign changed over time</h2>
+        <p class="section-intro">One thing I wanted this case study to show is that the final version did not appear all at once. The project moved from rough wireframes to higher fidelity mockups, then to implementation, and then through a lot of smaller front-end adjustments once the site was actually being used and tested.</p>
+        <div class="compare">
+          <div class="image-frame">
+            <div class="label">Wireframe stage</div>
+            <img src="assets/wireframe-figma.png" alt="Figma file sidebar showing project wireframes and layers" />
+            <p class="caption">Early planning in Figma included separate wireframe and high-fidelity stages, plus dedicated work on search and notification flows.</p>
+          </div>
+          <div class="image-frame">
+            <div class="label">Design evolution</div>
+            <img src="assets/design-evolution-slide.png" alt="Presentation slide showing sketches and progression to final screens" />
+            <p class="caption">The slides documented a progression from paper sketches to digital mockups to coded pages.</p>
+          </div>
+        </div>
+        <div class="timeline" style="margin-top:1.5rem;">
+          <div class="timeline-step">
+            <div class="step-label">Step 1</div>
+            <div class="panel card"><h3>Understand the weak points</h3><p>The original direction left users unsure about purpose and navigation, so the project needed stronger visual hierarchy and easier movement between pages.</p></div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-label">Step 2</div>
+            <div class="panel card"><h3>Refine the structure</h3><p>As the screens became more detailed, the team simplified the header, made exploration easier, and tried to reduce the amount of clutter users had to process at once.</p></div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-label">Step 3</div>
+            <div class="panel card"><h3>Make the interactions actually work</h3><p>This is where most of my work came in. I focused on search behavior, working links, overlays, and the smaller UI adjustments that made the coded version closer to the intended design.</p></div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-label">Step 4</div>
+            <div class="panel card"><h3>Polish what still felt off</h3><p>Once the site existed as a real front-end, some parts needed cleanup because they either looked off, behaved inconsistently, or did not match the creator/profile structure the team was aiming for.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testing" class="section">
+      <div class="container grid-2">
+        <div>
+          <div class="kicker">05 · Testing and outcomes</div>
+          <h2>What changed because of feedback</h2>
+          <p class="section-intro">The presentation reflection and results slides helped connect the original findings to actual design choices. The redesign was not just based on preference. It responded directly to what users struggled with during testing.</p>
+          <div class="panel card">
+            <h3>Examples of feedback turning into changes</h3>
+            <ul>
+              <li>The dark mode toggle was hard to locate, so the redesign moved it into the header where it was easier to find.</li>
+              <li>The product intent was unclear, so the home page was redesigned to explain the platform more directly.</li>
+              <li>The navigation felt clunky, so the header was streamlined to reduce confusion.</li>
+              <li>The overall layout did not support the experience very well, so the system was overhauled to better match user expectations.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/results-slide.png" alt="Results slide connecting design problems to solutions" />
+          <p class="caption">The results slide made the problem-to-solution relationship explicit, which is the same structure I wanted to preserve in this case study.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="final" class="section">
+      <div class="container">
+        <div class="kicker">06 · Final product</div>
+        <h2>What the finished experience looks like</h2>
+        <p class="section-intro">The final site is not perfect, but it is much clearer than the earlier direction. The home page does more to explain the platform, the creator pages are more consistent, and the interface gives users more to work with visually and functionally than the earlier linear flow.</p>
+        <div class="grid-2">
+          <div class="image-frame">
+            <img src="assets/home-section-echoverse.png" alt="Final home page section from the Patreon redesign" />
+            <p class="caption">Home page content was redesigned to communicate value faster and feel less like a single-path experience.</p>
+          </div>
+          <div class="image-frame">
+            <img src="assets/account-notifications.png" alt="Final account page with notification overlay" />
+            <p class="caption">The desktop account page shows the kind of front-end polish work I kept coming back to, especially around overlay behavior and layout cleanup.</p>
+          </div>
+          <div class="image-frame">
+            <img src="assets/payment-screen.png" alt="Payment interface from the Patreon redesign" />
+            <p class="caption">The payment flow helped make the final product feel more complete by covering a full user path instead of stopping at browsing.</p>
+          </div>
+          <div class="image-frame">
+            <img src="assets/home-section-atlas.png" alt="Another home page section from the final Patreon redesign" />
+            <p class="caption">The final coded version also made creator sections feel more distinct, with working profile links and more consistent profile imagery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection" class="section">
+      <div class="container grid-2">
+        <div>
+          <div class="kicker">07 · Reflection</div>
+          <h2>What I learned</h2>
+          <p class="section-intro">The part of the project that went best for me was the search bar because it pushed me to learn something new without feeling completely lost. The hardest part was the home page because so many elements depended on each other. It forced me to think less like I was styling one isolated page and more like I was working on a system.</p>
+          <div class="panel card">
+            <h3>My main takeaways</h3>
+            <ul>
+              <li>UI decisions matter most when they reduce confusion, not when they just add detail.</li>
+              <li>Mobile-first thinking matters because consistency between views affects how complete the experience feels.</li>
+              <li>Front-end cleanup is real design work, especially when it fixes the gap between intention and behavior.</li>
+              <li>If I kept building this project, I would reduce hard-coded content and make the structure easier to maintain.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/reflection-slide.png" alt="Reflection slide from the team presentation" />
+          <p class="caption">The team reflection slide lined up with my own experience: the project reinforced how much the interface affects the overall user experience and how important consistency becomes once a site grows across multiple pages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>Rico Fair</div>
+      <div class="small">Patreon redesign case study · built for portfolio integration</div>
+    </div>
+  </footer>
+</body>
+</html>
